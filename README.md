@@ -31,3 +31,24 @@ nesto-playwright-js-automation/
 ├─ playwright.config.js # Playwright configuration
 ├─ package.json # Node.js dependencies
 └─ README.md # Project documentation
+
+
+---
+
+## ⚡ How to Run
+
+1. **Clone the repository:**
+    git clone https://github.com/nitesh1302/nesto-playwright-js-automation.git
+
+2. **change the directory:**
+   cd nesto-playwright-js-automation
+
+4. **Install dependencies:**
+    npm install
+
+5. **Run all tests:**
+    npx playwright test
+   
+6. **Run tests with a specific file:**
+    npx playwright test tests/signup-positive.test.js
+
