@@ -1,0 +1,10 @@
+[
+  {
+    "firstName": "Nitesh",
+    "lastName": "Goyal",
+    "phone": "+16394711770",
+    "password": "P@ss4word123",
+    "confirmPassword": "P@ss4word123",
+    "province":"ON"
+  }
+]

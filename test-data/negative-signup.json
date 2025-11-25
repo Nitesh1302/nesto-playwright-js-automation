@@ -1,0 +1,127 @@
+[
+  {
+    "scenario": "Invalid email format",
+    "firstName": "Nitesh",
+    "lastName": "Goyal",
+    "email": "invalidemail",
+    "phone": "6394711770",
+    "password": "P@ss4word123",
+    "confirmPassword": "P@ss4word123",
+    "province":"ON",
+    "expectedError": "Invalid email"
+    
+  },
+   {
+    "scenario": "Phone number length is less than 10 digits",
+    "firstName": "Nitesh",
+    "lastName": "Goyal",
+    "email": "nesto.user2@gmail.com",
+    "phone": "232232-323",
+    "password": "P@ss4word123",
+    "confirmPassword": "P@ss4word123",
+    "province":"ON",
+    "expectedError": "Invalid value"
+  },
+  {
+    "scenario": "Too many characters for the firstName",
+    "firstName": "  asdfasdfadaasasdasdadadasdasdasdadadasdfasdfadaasasdasdadadsdsss",
+    "lastName": "Goyal",
+    "email": "nesto.user2@gmail.com",
+    "phone": "6394711770",
+    "password": "P@ss4word123",
+    "province":"ON",
+    "confirmPassword": "P@ss4word123",
+    "expectedError": "Too many characters"
+  },
+  {
+    "scenario": "Mismatched passwords",
+    "firstName": "Nitesh",
+    "lastName": "Goyal",
+    "email": "nesto.user2@gmail.com",
+    "phone": "6394711770",
+    "password": "P@ss4word123",
+    "province":"ON", 
+    "confirmPassword": "WrongPassword1",
+    "expectedError": "Passwords do not match"
+  },
+  {
+    "scenario": "password is too short",
+    "firstName": "Nitesh",
+    "lastName": "Goyal",
+    "email": "nesto.user2@gmail.com",
+    "phone": "6394711770",
+    "password": "123",
+    "province":"ON",
+    "confirmPassword": "123",
+    "expectedError": "Minimum of 12 letters required"
+  },
+   {
+    "scenario": "password doesn't satisfy the password conditions",
+    "firstName": "Nitesh",
+    "lastName": "Goyal",
+    "email": "nesto.user2@gmail.com",
+    "phone": "6394711770",
+    "password": "asdfg23343546567",
+    "confirmPassword": "123",
+    "province":"ON",
+    "expectedError": "Password must contain at least one uppercase letter, one lowercase letter and one number"
+  },
+  {
+    "scenario": "password is too long",
+    "firstName": "Nitesh",
+    "lastName": "Goyal",
+    "email": "nesto.user2@gmail.com",
+    "phone": "6394711770",
+    "password": "P@ss4wordasdfg23343546567ss4wordasdfg23343546567",
+    "confirmPassword": "123",
+    "province":"ON",
+    "expectedError": "Maximum of 32 letters required"
+  },
+   {
+    "scenario": "duplicate emailId for signup",
+    "firstName": "Nitesh",
+    "lastName": "Goyal",
+    "email": "validuser1764012995356@email.com",
+    "phone": "6394711770",
+    "password": "P@ss4word123",
+    "confirmPassword": "P@ss4word123",
+    "province":"ON",
+    "expectedError": "Something went wrong! Please try again and if you continue to have trouble feel free to contact your advisor"
+  },
+     {
+    "scenario": "first Name is missing",
+    "firstName": "",
+    "lastName": "Goyal",
+    "email": "validuser1764012995356@email.com",
+    "phone": "6394711770",
+    "password": "P@ss4word123",
+    "confirmPassword": "P@ss4word123",
+    "province":"ON",
+    "expectedError": "The field is required"
+  },
+       {
+    "scenario": "Last name is missing",
+    "firstName": "Nitesh",
+    "lastName": "",
+    "email": "validuser1764012995356@email.com",
+    "phone": "6394711770",
+    "password": "P@ss4word123",
+    "confirmPassword": "P@ss4word123",
+    "province":"ON",
+    "expectedError": "The field is required"},
+     {
+    "scenario": "when all the fields are empty",
+    "firstName": "",
+    "lastName": "",
+    "email": "",
+    "phone": "",
+    "password": "",
+    "confirmPassword": "",
+    "province":"ON",
+    "expectedErrors": [
+    "Invalid value",
+    "Invalid email",
+    "Minimum of 12 letters required"]
+  }
+
+]
